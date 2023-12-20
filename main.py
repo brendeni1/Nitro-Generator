@@ -26,6 +26,7 @@ cooldown_start_time = None  # Initialize cooldown start time
 
 def getToken() -> str:
     global cooldown_start_time  # Declare cooldown_start_time as a global variable
+    global error_count  # Declare error_count as a global variable
 
     try:
         response = requests.post(URL, json=UID, headers=headers)
@@ -52,7 +53,6 @@ def getToken() -> str:
                 error_count = 0
                 cooldown_start_time = None
         return None
-
 
 links = []
 
