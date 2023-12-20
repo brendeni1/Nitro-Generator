@@ -74,10 +74,12 @@ try:
 except KeyboardInterrupt:
     pass
 except Exception as e:
-    # If an unhandled exception occurs, write the generated links to a "crash recovery" file
+    # If an unhandled exception occurs, print the exception traceback
+    traceback.print_exc()  # Print the exception traceback
+    
+    # Write the generated links to a "crash recovery" file
     with open("crash_recovery.txt", "w") as recovery_file:
         recovery_file.write("\n".join(links))  # Write generated links to the crash recovery file
-    traceback.print_exc()  # Print the exception traceback
 
 # Write the last generated number to a file
 with open("last_generated_number.txt", "w") as num_file:
