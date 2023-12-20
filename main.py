@@ -33,4 +33,4 @@ except KeyboardInterrupt:
 with open("links.txt", "w") as file:
     file.write("\n".join(links)) # Tokens are written to the links.txt file upon closing the program.
 
-    print("\nLINKS WRITTEN")
+    print("\nLINKS WRITTEN TO links.txt")
