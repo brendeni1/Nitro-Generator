@@ -12,13 +12,14 @@ THIS 1-MONTH DISCORD NITRO OFFER IS AVAILABLE TO OPERA GX USERS. REDEEM BY 11:59
 
 How to use:
 
-1. `pip install requests configparser`.
-2. Change settings in `settings.ini`.
-3. Run `main.py`
-4. Profit
+1. Clone this repo.
+2. Run `pip install -r requirements.txt`.
+3. Change settings in `settings.ini`.
+4. Run `main.py`
+5. Profit
 
 Codes are written as gift links into `links.txt` after the script has stopped running or after you've keyboard interrupted.
 
 Any account can redeem the codes.
 
-If it doesn't allow you to redeem, **RTFM** (T&C). You probably had Nitro in the last year.
+If it doesn't allow you to redeem, **RTFM** (T&C). *You probably had Nitro in the last year.*
