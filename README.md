@@ -21,4 +21,4 @@ Codes are written as gift links into `links.txt` after the script has stopped ru
 
 Any account can redeem the codes.
 
-If it doesn't allow you to redeem, RTFM (Line 9).
+If it doesn't allow you to redeem, **RTFM** (T&C).
