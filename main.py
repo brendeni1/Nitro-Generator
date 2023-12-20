@@ -25,6 +25,8 @@ error_count = 0  # Initialize error count
 cooldown_start_time = None  # Initialize cooldown start time
 
 def getToken() -> str:
+    global cooldown_start_time  # Declare cooldown_start_time as a global variable
+
     try:
         response = requests.post(URL, json=UID, headers=headers)
         response.raise_for_status()  # Raise an exception for non-2xx responses
@@ -32,7 +34,6 @@ def getToken() -> str:
         data = json.loads(response.text)
         return data["token"]
     except RequestException as e:
-        global error_count
         error_count += 1
 
         # Check if error count exceeds 2 within 10 seconds
@@ -51,6 +52,7 @@ def getToken() -> str:
                 error_count = 0
                 cooldown_start_time = None
         return None
+
 
 links = []
 
