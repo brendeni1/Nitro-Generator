@@ -10,11 +10,11 @@ URL = "https://api.discord.gx.games/v1/direct-fulfillment"
 UID = {"partnerUserId": "69f7b7c20983f391d4ea2726da99f7144828e4f6136308f11b254c2ded43c556"}
 BASE_URL = "https://discord.com/billing/partner-promotions/1180231712274387115/"
 SETTINGS = configparser.ConfigParser()
-ua = UserAgent()
 SETTINGS.read("settings.ini")
+UA = UserAgent()
 
 # Generate a random User-Agent string
-random_user_agent = ua.random
+random_user_agent = UA.random
 
 headers = {
     "User-Agent": random_user_agent
