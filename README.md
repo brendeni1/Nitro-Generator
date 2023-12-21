@@ -1,3 +1,7 @@
+# UPDATE 12/20/2023 4PM
+
+It looks like Discord has fixed this exploit and is not allowing codes to be claimed anymore. Broken until further notice.
+
 # OperaGX Nitro Generator
 
 This simple Python script uses the Discord X OperaGX promotion API across multiple user agents to fetch a one-month nitro token redeem link.
